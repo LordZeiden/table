@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 50px 0 30px 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #bfbfbf;
+    font-weight: bold;
+}
+
+.navigation-one ul,
+.navigation-two ul,
+.navigation-three ul {
+    list-style: none;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    |background-color: #2a3644;
+}
+
+
+.list>li:hover>.inlist,
+.inlist>li:hover>.inlist-two,
+.inlist-two>li:hover>.inlist-three {
+    display: block;
+}
+
+.list>li>ul {
+    display: none;
+}
+
+.inlist,
+.inlist-two,
+.inlist-three {
+    display: none;
+}
+
+.list>li:hover>ul {
+    display: block;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 12.3px 0;
+}
+
+.thead th {
+    border: 1px solid #3f4852;
+}
+
+thead {
+    background-color: #2a3644;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+thead th {
+    padding: 14.3px 0;
+}
+
+.tbody {
+    font-size: 16px;
+    color: #2a3644;
+}
+
+.tbody td {
+    border: 1px solid #c0c1c2;
+}
+
+.tbody>tr:nth-child(odd):hover,
+.tbody>tr:nth-child(even):hover {
+    background-color: #c0c1c2;
+}
+
+.tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.tbody tr:nth-child(even) {
+    background-color: #e8e8e8;
+}
+
+.table-css {
+    display: table;
+    width: 100%;
+}
+
+.table-css p {
+    display: table-row;
+}
