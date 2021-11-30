@@ -55,14 +55,27 @@ h1 {
 .table {
     width: 100%;
     border-collapse: collapse;
+    border-radius: 3px 3px 3px 3px;
+    overflow: hidden;
 }
 
 table td {
     padding: 12.3px 0;
 }
 
-.thead th {
-    border: 1px solid #3f4852;
+.table td:first-child {
+    text-align: center;
+}
+
+.table td:nth-child(3n),
+.table td:nth-child(4n),
+.table td:nth-child(5n) {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.table td:nth-child(2) {
+    padding-left: 25px;
 }
 
 thead {
@@ -81,9 +94,25 @@ thead th {
     color: #2a3644;
 }
 
-.tbody td {
-    border: 1px solid #c0c1c2;
+.thead th:not(:last-child) {
+    border-right: 1px solid #3f4852;
+
 }
+
+.thead tr:not(:last-child) {
+    border-bottom: 1px solid #3f4852;
+}
+
+.tbody td:not(:last-child) {
+    border-right: 1px solid #c0c1c2;
+
+}
+
+.tbody tr:not(:last-child) {
+    border-bottom: 1px solid #c0c1c2;
+}
+
+
 
 .tbody>tr:nth-child(odd):hover,
 .tbody>tr:nth-child(even):hover {
