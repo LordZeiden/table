@@ -63,18 +63,26 @@ table td {
     padding: 12.3px 0;
 }
 
-.table td:first-child {
+.table td:first-child,
+.css-thead b:nth-child(3),
+.css-thead b:nth-child(4),
+.css-thead b:nth-child(5) {
     text-align: center;
 }
 
 .table td:nth-child(3),
 .table td:nth-child(4),
-.table td:nth-child(5) {
+.table td:nth-child(5),
+.css-tbody i:nth-child(3),
+.css-tbody i:nth-child(4),
+.css-tbody i:nth-child(5) {
     text-align: right;
     padding-right: 20px;
 }
 
-.table td:nth-child(2) {
+.table td:nth-child(2),
+.css-tbody i:nth-child(2),
+.css-thead b:nth-child(2) {
     padding-left: 25px;
 }
 
@@ -99,7 +107,8 @@ thead tr:first-child th:nth-child(2) {
     color: #2a3644;
 }
 
-.thead th:not(:last-child) {
+.thead th:not(:last-child),
+.css-thead b:not(:last-child) {
     border-right: 1px solid #3f4852;
 
 }
@@ -108,39 +117,67 @@ thead tr:first-child th:nth-child(2) {
     border-bottom: 1px solid #3f4852;
 }
 
-.tbody td:not(:last-child) {
+.tbody td:not(:last-child),
+.table-css p>i:not(:last-child) {
     border-right: 1px solid #c0c1c2;
 
 }
 
-.tbody tr:not(:last-child) {
+.tbody tr:not(:last-child),
+.table-css p:not(:last-child)>i {
     border-bottom: 1px solid #c0c1c2;
 }
 
 
 
 .tbody>tr:nth-child(odd):hover,
-.tbody>tr:nth-child(even):hover {
+.tbody>tr:nth-child(even):hover,
+.table-css p:hover {
     background-color: #c0c1c2;
 }
 
-.tbody tr:nth-child(odd) {
+.tbody tr:nth-child(odd),
+.css-tbody:nth-child(odd) {
     background-color: #f2f2f2;
 }
 
-.tbody tr:nth-child(even) {
+.tbody tr:nth-child(even),
+.css-tbody:nth-child(even) {
     background-color: #e8e8e8;
 }
 
 .table-css {
     display: table;
     width: 100%;
+    margin-bottom: 100px;
+    border-radius: 0 0 2px 2px;
+    overflow: hidden;
 }
 
-.tbody i {
+.css-thead b {
+    color: #fff;
+    background-color: #2a3644;
+    padding: 13.8px 0;
+}
+
+.css-tbody i {
+    font-size: 16px;
+    color: #2a3644;
+    font-style: normal;
+    padding: 13.8px 0;
+}
+
+.css-tbody i:first-child,
+.css-thead b:first-child {
+    text-align: center;
+}
+
+.table-css b,
+.table-css i {
     display: table-cell;
 }
 
-.tbody b {
+.table-css p {
     display: table-row;
+    margin: 0;
 }
