@@ -19,23 +19,159 @@ h1 {
     font-weight: bold;
 }
 
-.navigation-one ul,
-.navigation-two ul,
-.navigation-three ul {
+.menu {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.list {
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.navigation-one li:hover,
+.navigation-two li:hover {
+    background-color: #3f4852;
+}
+
+.navigation-one a:hover,
+.navigation-two a:hover,
+.navigation-three a:hover {
+    color: #fd8612;
+}
+
+.navigation-one ul {
+    padding: 0;
+}
+
+.navigation-one a {
+    display: block;
+    padding: 14px 30px;
+
+}
+
+.navigation-one:not(:last-child) a,
+.navigation-two:not(:last-child) a {
+    border-right: 1px solid #3f4852;
+}
+
+.navigation-one li:not(:first-child)>a {
+    border-left: 1px solid #3f4852;
+}
+
+.navigation-one li,
+.navigation-two li,
+.navigation-three li {
     list-style: none;
+}
+
+.navigation-one a,
+.navigation-two a,
+.navigation-three a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation-two ul {
+    padding: 0;
+}
+
+.navigation-two a {
+    display: block;
+    padding: 14px 43px;
+}
+
+.navigation-three ul:first-child {
+    padding: 0;
+    padding-left: 47px;
+}
+
+.navigation-three>ul>li>a {
+    display: block;
+    padding: 15px 30px;
+}
+
+.navigation-three>ul>li:first-child a {
+    position: relative;
+}
+
+.navigation-three>ul>li:first-child a:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 13px;
+    left: 5px;
+    top: 16px;
+    background-image: url(../img/sprite.png);
+    background-position: -118px -1px;
+}
+
+.navigation-three>ul>li:first-child a:hover:before {
+    background-position: -119px -22px;
+}
+
+.navigation-three>ul>li:not(:last-child) a {
+    border-right: 1px solid #3f4852;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social a {
+    margin: 12px;
+    display: block;
+    background: url(../img/sprite.png) no-repeat;
+
+}
+
+a.fb {
+    width: 10px;
+    height: 19px;
+    background-position: -1px 0;
+}
+
+a.fb:hover {
+    background-position: -1px -20px;
+
+}
+
+a.tw {
+    width: 18px;
+    height: 15px;
+    background-position: -14px 0;
+}
+
+a.tw:hover {
+    background-position: -14px -20px;
+
+}
+
+a.inst {
+    width: 19px;
+    height: 19px;
+    background-position: -34px 0;
+}
+
+a.inst:hover {
+    background-position: -33px -20px;
+
 }
 
 .list {
     display: flex;
     justify-content: space-between;
-    |background-color: #2a3644;
+    background-color: #2a3644;
+    margin: 40px 0;
 }
 
 
 .list>li:hover>.inlist,
 .inlist>li:hover>.inlist-two,
 .inlist-two>li:hover>.inlist-three {
-    display: block;
+    -display: block;
 }
 
 .list>li>ul {
@@ -49,7 +185,7 @@ h1 {
 }
 
 .list>li:hover>ul {
-    display: block;
+    -display: block;
 }
 
 .table {
